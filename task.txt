@@ -1,0 +1,2 @@
+[PyTest]
+python -m pytest --cov=. --cov-report=term -s -v pets/tests

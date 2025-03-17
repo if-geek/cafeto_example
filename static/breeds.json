@@ -1,0 +1,82 @@
+{
+    "dog": [
+        "Mixed Breed",
+        "Labrador Retriever",
+        "German Shepherd",
+        "Golden Retriever",
+        "Bulldog",
+        "Beagle",
+        "Poodle",
+        "Rottweiler",
+        "Yorkshire Terrier",
+        "Boxer"
+    ],
+    "cat": [
+        "Domestic Shorthair",
+        "Abyssinian",
+        "American Bobtail",
+        "American Curl",
+        "American Shorthair",
+        "American Wirehair",
+        "Balinese",
+        "Bengal",
+        "Birman",
+        "Bombay"
+    ],
+    "bird": [
+        "African Grey Parrot",
+        "Amazon Parrot",
+        "Budgerigar",
+        "Cockatiel",
+        "Cockatoo",
+        "Conure",
+        "Eclectus Parrot",
+        "Lovebird",
+        "Macaw",
+        "Parakeet"
+    ],
+    "fish": [
+        "Angelfish",
+        "Betta",
+        "Catfish",
+        "Cichlid",
+        "Goldfish",
+        "Guppy",
+        "Molly",
+        "Neon Tetra",
+        "Platy",
+        "Swordtail"
+    ],
+    "reptile": [
+        "Bearded Dragon",
+        "Boa Constrictor",
+        "Corn Snake",
+        "Gecko",
+        "Iguana",
+        "Leopard Gecko",
+        "Python",
+        "Red-Eared Slider",
+        "Tortoise",
+        "Turtle"
+    ],
+    "rabbit": [
+        "American",
+        "Belgian Hare",
+        "Dutch",
+        "English Lop",
+        "Flemish Giant",
+        "Himalayan",
+        "Mini Lop",
+        "Mini Rex",
+        "Netherland Dwarf",
+        "Polish"
+    ],
+    "hamster": [
+        "Syrian",
+        "Dwarf Campbell Russian",
+        "Dwarf Winter White Russian",
+        "Roborovski",
+        "Chinese",
+        "Mongolian"
+    ]
+}

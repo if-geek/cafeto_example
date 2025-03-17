@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: cafeto_example_app
+    volumes:
+      - .:/app
+      - /app/__pycache__/
+    ports:
+      - "8000:8000"
+      - "5678:5678"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/cafeto_example
+    command: ["sh", "-c", "python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload"]
+    networks:
+      - cafeto_example_network
+  
+  db:
+    image: postgres:13
+    container_name: cafeto_example_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: cafeto_example
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - cafeto_example_network
+
+volumes:
+  postgres_data:
+
+networks:
+  cafeto_example_network:
+    driver: bridge
